@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Loja Yelestai - Produtos</title>
+    <link rel="icon" href="imagens/favicon.png"> <!--Logo-->
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="estilo.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  </head>
+
+  <body>
+
+
+    <nav class="navbar navbar-fixed-top navbar-inverse navbar-transparente">
+      <div class="container">
+        
+        <!-- header -->
+        <div class="navbar-header">
+          
+          <!-- botao toggle -->
+          <button type="button" class="navbar-toggle collapsed"
+                  data-toggle="collapse" data-target="#barra-navegacao">
+            <span class="sr-only">alternar navegação</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a href="index.html" class="navbar-brand">
+            <span class="img-logo">Yelestai</span> <!--Vinculado o logo no css-->
+          </a>
+
+        </div>
+
+        <!-- navbar -->
+        <div class="collapse navbar-collapse" id="barra-navegacao">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="quemsomos.html">Quem Somos</a></li>
+            <li><a href="faleconosco.html">Fale Conosco</a></li>
+            <li class="divisor" role="separator"></li>
+            <li class="inscrevase"><a href="login_cadastro.html">Inscrever-se</a></li>
+            <li class="entrar"><a href="login_cadastro.html">Entrar</a></li>
+            <li class="hidden nome"><a href="#" id="nomeuser">Olá, name.</a></li>
+            <li class="hidden sair"><a href="#" id="sair">Sair</a></li>
+            <a href="carrinho.html" class="glyphicon glyphicon-shopping-cart butonmarket"></a>
+          </ul>
+        </div>
+      </div><!-- /container -->
+    </nav><!-- /nav -->
+
+
+     <section id="servicos-catalogo">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6"> <!--Login-->
+            <h3>Faça Login</h3> </br></br>
+            <form class="form-horizontal">
+            <div class="form-group">
+              <label for="inseriremail" class="col-sm-2 control-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inseriremail" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inserirsenha" class="col-sm-2 control-label">Senha</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inserirsenha" placeholder="Senha">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                  <label>
+                    <p style="color: red;" id="usuario_invalido" hidden>Usuário invalido</p>
+                  </label>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" id="logar" class="btn btn-default">Entrar</button>
+              </div>
+            </div>
+          </form>
+
+          </div>
+          
+          <div class="col-md-6"> <!--Cadastro-->
+            <h3>És novo por aqui? Registre-se</h3> </br></br>
+            <form>
+            <div class="form-group">
+              <label for="cadastronome">Nome</label>
+              <input type="" class="form-control" id="cadastronome" placeholder="Nome">
+            </div>
+            <div class="form-group">
+              <label for="cadastroemail">Email</label>
+              <input type="email" class="form-control" id="cadastroemail" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="cadastrosenha">Senha</label>
+              <input type="password" class="form-control" id="cadastrosenha" placeholder="Senha">
+            </div>
+  
+            <button type="submit" id="cadastrar" class="btn btn-default">Registrar-se</button>
+
+
+
+          </form> </br> </br></br></br></br></br></br></br></br></br>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+    
+    <!-- Rodape -->
+    <footer id="rodape">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-md-2">
+            <span class="img-logo">Yelestai</span>
+          </div>
+
+          <div class="col-md-2">
+            <h4>Company</h4>
+            <ul class="nav">
+              <li><a href="quemsomos.html">Sobre</a></li>
+              <li><a href="produtos.html">Novidades</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <h4>Comunidades</h4>
+            <ul class="nav">
+              <li><a href="desenvolvedores.html">Desenvolvedores</a></li>
+              
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <h4>links uteis</h4>
+            <ul class="nav">
+              <li><a href="faleconosco.html">Ajuda</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <ul class="nav">
+              <li class="item-rede-social"><a href=""><img src="imagens/facebook.png"></a></li>
+              <li class="item-rede-social"><a href=""><img src="imagens/twitter.png"></a></li>
+              <li class="item-rede-social"><a href=""><img src="imagens/instagram.png"></a></li>
+            </ul>
+          </div>
+
+        </div><!-- /row -->
+      </div>
+    </footer>
+
+    <script>
+    
+
+    $("#logar").click(function (e) { 
+      e.preventDefault();
+      
+      email = $("#inseriremail").val()
+      senha = $("#inserirsenha").val()
+      dados = {"email": email, "senha": senha}
+      console.log(dados)
+      $.ajax({
+        type: "POST",
+        url: "http://localhost:5000/usuario/login",
+        data: JSON.stringify({email: email, senha: senha}),
+        contentType: "application/json",
+        dataType: "json",
+        success: function (response) {
+            $(location).attr("href", "./produtos.html");
+            
+            response = response.message
+            sessionStorage.setItem('email', response.email),
+            sessionStorage.setItem('nome', response.nome),
+            sessionStorage.setItem('id_user', response.id_usuario)
+        }, error: function (response) {
+          $("#usuario_invalido").attr("hidden", false)
+      }
+    }); 
+    });
+    
+    $("#cadastrar").click(function (e) { 
+      e.preventDefault();
+
+      nome = $("#cadastronome").val()
+      email = $("#cadastroemail").val()
+      senha = $("#cadastrosenha").val()
+      dados = {"nome": nome, "email": email, "senha": senha}
+      console.log(dados)
+      $.ajax({
+        type: "POST",
+        url: "http://localhost:5000/usuario/cadastrar",
+        data: JSON.stringify({nome: nome, email: email, senha: senha}),
+        contentType: "application/json",
+        dataType: "json",
+        success: function (response) {
+            $(location).attr("href", "./produtos.html");
+        }, error: function (response) {
+          $("#usuario_invalido").attr("hidden", false)
+      }
+    });  
+    });
+
+
+    </script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
